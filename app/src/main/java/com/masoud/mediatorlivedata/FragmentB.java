@@ -10,14 +10,14 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-public class FragmentA extends Fragment {
+public class FragmentB extends Fragment {
 
-    private SeekBar seekBar_A;
+    private SeekBar seekBar_B;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_a , container , false);
+        return inflater.inflate(R.layout.fragment_b , container , false);
     }
 
     @Override
@@ -29,8 +29,8 @@ public class FragmentA extends Fragment {
 
     private void findView(View rootView){
 
-        seekBar_A = rootView.findViewById(R.id.seekBar_A);
+        seekBar_B = rootView.findViewById(R.id.seekBar_B);
     }
 
-
+    
 }
