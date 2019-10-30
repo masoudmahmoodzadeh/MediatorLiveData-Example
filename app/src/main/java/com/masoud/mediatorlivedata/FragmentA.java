@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.SeekBar;
 
 import androidx.annotation.NonNull;
@@ -16,6 +17,7 @@ public class FragmentA extends Fragment {
 
     private SeekBar seekBar_A;
     private MutableLiveData<Integer> liv_progress;
+    private Button btn_nextFragment;
 
     @Override
     public void onAttach(Context context) {
@@ -47,6 +49,7 @@ public class FragmentA extends Fragment {
     private void findView(View rootView) {
 
         seekBar_A = rootView.findViewById(R.id.seekBar_A);
+        btn_nextFragment = rootView.findViewById(R.id.btn_nextFragment);
     }
 
     public MutableLiveData getLiveData(){

@@ -19,4 +19,12 @@
         android:layout_margin="10dp"
         android:layout_height="wrap_content" />
 
+    <TextView
+        android:id="@+id/btn_previousFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="Press Back Button ..." />
+
 </LinearLayout>
